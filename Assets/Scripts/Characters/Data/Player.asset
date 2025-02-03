@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   maxHealth: 10
-  speed: 5
+  speed: 20000
   accuracyPercentage: 60

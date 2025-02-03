@@ -30,11 +30,9 @@ public class PlayerController
 
     public void HandleInput()
     {
-        HandleEscape();
         HandleSwitching();
         GetMousePos();
         HandleAiming();
-        HandleMovement();
         HandleMouseClick();
         HandleReload();
     }
@@ -47,27 +45,27 @@ public class PlayerController
             character.heldGun.Reload(ReportReloaded);
         }
     }
-        public void ReportReloaded()
-        {
-            Debug.Log("Done!");
-        }
+    public void ReportReloaded()
+    {
+        Debug.Log("Done!");
+    }
 
     public void Move()
     {
-        if (Mathf.Approximately(currentMoveVector.sqrMagnitude, 0f))
+        HandleMovement();
+        if (currentMoveVector != Vector2.zero)
         {
-            rigidbody.velocity = Vector2.zero;
-        }
-        else
-        {
-            rigidbody.MovePosition((Vector2)character.transform.position + (currentMoveVector * character.charData.speed * Time.fixedDeltaTime));
-            currentMoveVector = Vector2.zero;
+            rigidbody.AddForce(currentMoveVector * character.charData.speed, ForceMode2D.Force);
+            if (rigidbody.velocity.magnitude > character.charData.speed)
+            {
+                rigidbody.velocity = rigidbody.velocity.normalized * character.charData.speed;
+            }
         }
 
         AdjustCrosshair();
     }
 
-    private void HandleEscape()
+    public void HandleEscape()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -164,9 +162,8 @@ public class PlayerController
 
         SetFacing(isMoving);
 
-        Vector2 moveDirection = new Vector2(horizontalAxis, verticalAxis).normalized;
-
-        currentMoveVector = moveDirection;
+        currentMoveVector = new Vector2(horizontalAxis, verticalAxis).normalized;
+        Debug.Log(currentMoveVector);
     }
 
     public void SetFacing(bool isMoving)

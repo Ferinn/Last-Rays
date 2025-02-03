@@ -32,17 +32,21 @@ public class PlayerCharacter : ICharacter
 
     void Update()
     {
+        controller.HandleEscape();
         if (alive)
         {
             Vector3 prevPos = this.transform.position;
             controller.HandleInput();
             lastframeDeltaPos = this.transform.position - prevPos;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+    }
+
+    private void FixedUpdate()
+    {
+        if (alive)
         {
-            Cursor.visible = true;
+            controller.Move();
         }
-        controller.Move();
     }
 
     private void LoadWeapons()

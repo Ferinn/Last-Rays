@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     {
         uiState = !uiState;
         UI.SetActive(uiState);
+        Cursor.visible = uiState;
     }
 
     public void Exitgame()
