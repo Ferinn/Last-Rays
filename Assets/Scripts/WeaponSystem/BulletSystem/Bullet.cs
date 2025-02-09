@@ -114,7 +114,7 @@ public class Bullet
                 float limitedDamage = rawDamage < shotInfo.minDamage ? shotInfo.minDamage : rawDamage;
                 limitedDamage = damageOverflow != 0 ? damageOverflow : limitedDamage;
 
-                damageOverflow = character.Hit(limitedDamage);
+                damageOverflow = character.Hit(limitedDamage, Vector2.zero);
                 if (damageOverflow == 0)
                 {
                     Falloff();

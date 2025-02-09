@@ -35,8 +35,10 @@ public abstract class ICharacter : MonoBehaviour
         Initialise();
     }
 
-    public float Hit(float damage)
+    public float Hit(float damage, Vector2 knockback)
     {
+        rigidBody.AddForce(knockback * 20000f, ForceMode2D.Impulse);
+
         //Check for damage overflow
         if (health < damage)
         {
@@ -51,7 +53,7 @@ public abstract class ICharacter : MonoBehaviour
 
     private void Die()
     {
-        animator.SetState(States.dead, facing);
+        animator.SetState(States.death, facing);
         alive = false;
         try
         {
