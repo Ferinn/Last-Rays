@@ -7,6 +7,13 @@ using UnityEngine;
 public class PixelartAnimator : MonoBehaviour
 {
     Animator animator;
+
+    [Header("--- VFX ---")]
+    bool hasVFX = false;
+    [SerializeField] Animator vfxAnimator;
+    [SerializeField] SpriteRenderer vfxRenderer;
+
+
     SpriteRenderer spriteRenderer;
     private States currentState;
 
@@ -31,6 +38,8 @@ public class PixelartAnimator : MonoBehaviour
 
     private void Start()
     {
+        hasVFX = vfxAnimator != null && vfxRenderer != null;
+
         InitialiseDependencies();
         UpdateAnimClipTimes();
 
@@ -47,6 +56,12 @@ public class PixelartAnimator : MonoBehaviour
     {
         spriteRenderer.flipX = _facing <= 0;
         if (currentState == newState) return;
+
+        if (hasVFX)
+        {
+            vfxRenderer.flipX = _facing <= 0;
+            vfxAnimator.Play(animStates[newState]);
+        }
 
         animator.Play(animStates[newState]);
         currentState = newState;

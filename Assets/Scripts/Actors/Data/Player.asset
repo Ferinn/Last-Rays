@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1da89dcca4df443b93e0265c335c55, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 3
   speed: 20000
   accuracyPercentage: 60

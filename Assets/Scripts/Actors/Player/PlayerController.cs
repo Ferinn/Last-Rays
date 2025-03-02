@@ -99,6 +99,9 @@ public class PlayerController
     private void HandleAiming()
     {
         character.heldGun.AimAt(lookDirection);
+
+        float tanLookDir = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+        character.flashlight.transform.localRotation = Quaternion.Euler(0, 0, tanLookDir - 90);
     }
 
     public void AdjustCrosshair()

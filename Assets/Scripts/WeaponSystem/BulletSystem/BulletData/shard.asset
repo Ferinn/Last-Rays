@@ -15,4 +15,5 @@ MonoBehaviour:
   speed: 75
   trailLengthMultiplier: 1
   damage: 1.5
+  piercing: 1
   color: {r: 1, g: 0.82036996, b: 0.25, a: 0}

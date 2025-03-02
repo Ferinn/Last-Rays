@@ -3,9 +3,16 @@ using UnityEngine;
 public class CamController : MonoBehaviour
 {
     public PlayerCharacter target;
+
+    [Header("--- FOW Setup ---")]
     [SerializeField] GameObject sceneFOWSource;
     [SerializeField] GameObject gameFOWSource;
 
+    [Header("--- VFX ---")]
+    [SerializeField] Material dmgScreenVFX;
+    [SerializeField] GameObject background;
+
+    [Header("--- Recoil Config ---")]
     [Range(0f, 1f)] public float recoverSpeed = 0.125f;
     [Range(1, 10)] public float recoilMultiplier = 2f;
     private Vector2 recoiledPos = Vector2.zero;
@@ -35,6 +42,19 @@ public class CamController : MonoBehaviour
         if (currentStage != RecoilStage.innactive)
         {
             StepRecoil();
+            //background.transform.position = this.transform.position;
+        }
+    }
+
+    void OnRenderImage(RenderTexture source, RenderTexture destination)
+    {
+        if (dmgScreenVFX != null)
+        {
+            Graphics.Blit(source, destination, dmgScreenVFX);
+        }
+        else
+        {
+            Graphics.Blit(source, destination);
         }
     }
 

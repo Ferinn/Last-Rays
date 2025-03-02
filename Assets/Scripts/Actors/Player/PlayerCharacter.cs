@@ -1,30 +1,46 @@
-using FunkyCode.Rendering.Day;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering;
+using System.Reflection;
 
 public class PlayerCharacter : ICharacter
 {
+    [Header("--- Crosshair ---")]
     [SerializeField] GameObject crosshair;
     [SerializeField] float crosshairMaxSize;
     [SerializeField] float crosshairMinSize;
 
+    [Header("--- VFX ---")]
+    public GameObject flashlight;
+    [SerializeField] FullScreenPassRendererFeature dmgVignetteFeature;
+    [SerializeField] Material dmgVignetteMat;
+    [Range(0f, 10f)] public float vignettePowerMax;
+    private float vignettePowerMin = 5f;
+    [Range(0f, 10f)] public float vignetteIntensityMax;
+    private float vignetteIntensityMin = 5f;
+
+    [Header("--- Controllers ---")]
     public PlayerController controller;
     public CamController camController;
 
+    [Header("--- Weapon System ---")]
     [SerializeField] private List<GameObject> weaponPrefabs = new List<GameObject>();
-
     [SerializeField] private Vector2 defaultWeaponPos = Vector2.zero;
     private List<GameObject> weapons = new List<GameObject>();
     public int equippedIndex = 0;
 
     void Start()
-    {
+    {        
         //Application.targetFrameRate = 120;
         QualitySettings.vSyncCount = 1;
         Cursor.visible = false;
         controller = new PlayerController(this, crosshair, rigidBody, crosshairMaxSize, crosshairMinSize);
         camController = transform.GetComponentInChildren<CamController>();
+
+        //dmgVignetteFeature = GetVignetteFeature();
+        dmgVignetteFeature.passMaterial = new Material(dmgVignetteMat);
+        dmgVignetteFeature.Create();
 
         LoadWeapons();
         EquipWeapon(0);
@@ -32,6 +48,7 @@ public class PlayerCharacter : ICharacter
 
     void Update()
     {
+        UpdateVignette();
         controller.HandleEscape();
         if (alive)
         {
@@ -72,4 +89,43 @@ public class PlayerCharacter : ICharacter
 
         heldGun.lastFired = Time.time;
     }
+
+    private void UpdateVignette()
+    {
+        float healthStage = Mathf.Clamp01(health/maxHealth);
+
+        if (healthStage <= 0.5f)
+        {
+            //float vignettePower = Mathf.Lerp(vignettePowerMax, vignettePowerMin, healthStage);
+            float VignetteIntensity = Mathf.Lerp(vignetteIntensityMax, 0.75f, healthStage);
+
+            //dmgVignetteFeature.passMaterial.SetFloat("_VignettePower", vignettePower);
+            dmgVignetteFeature.passMaterial.SetFloat("_VignetteIntensity", VignetteIntensity);
+        }
+        else
+        {
+            dmgVignetteFeature.passMaterial.SetFloat("_VignettePower", vignetteIntensityMin);
+            dmgVignetteFeature.passMaterial.SetFloat("_VignetteIntensity", vignetteIntensityMin);
+        }
+    }
+
+    // private FullScreenPassRendererFeature GetVignetteFeature()
+    // {
+    //     var urpAsset = (UniversalRenderPipelineAsset)GraphicsSettings.renderPipelineAsset;
+
+    //     var _rendererFeatures = urpAsset.scriptableRenderer.GetType()
+    //         .GetProperty("rendererFeatures", BindingFlags.NonPublic | BindingFlags.Instance)
+    //         ?.GetValue(urpAsset.scriptableRenderer, null) as List<ScriptableRendererFeature>;
+
+    //     for (int i = 0; i < _rendererFeatures.Count; i++)
+    //     {
+    //         if (_rendererFeatures[i] is FullScreenPassRendererFeature)
+    //         {
+    //             Debug.Log("FOUND!!!");
+    //             return (FullScreenPassRendererFeature)_rendererFeatures[i];
+    //         }
+    //     }
+
+    //     return null;
+    // }
 }

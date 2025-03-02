@@ -10,6 +10,7 @@ public struct ShotInfo
         this.maxDamage = bulletData.damage * power;
         this.minDamage = bulletData.damage;
         this.speed = Mathf.Ceil(bulletData.speed);
+        this.piercing = bulletData.piercing;
         this.color = bulletData.color;
         this.trailLengthMultiplier = bulletData.trailLengthMultiplier;
         this.direction = direction;
@@ -24,6 +25,7 @@ public struct ShotInfo
     public float minDamage { get; private set; }
     public float power { get; private set; }
     public float speed { get; private set; }
+    public bool piercing {get; private set;}
     public Color color { get; private set; }
     public float trailLengthMultiplier { get; private set; }
     public Vector2 direction { get; private set; }

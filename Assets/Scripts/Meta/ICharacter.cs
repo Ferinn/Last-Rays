@@ -6,6 +6,7 @@ using States = PixelartAnimator.States;
 public abstract class ICharacter : MonoBehaviour
 {
     public float health { get; private set; }
+    public float maxHealth { get; private set; }
     public bool alive { get; private set; }
 
     [NonSerialized] public int facing = 1;
@@ -22,6 +23,7 @@ public abstract class ICharacter : MonoBehaviour
     public void Initialise()
     {
         health = charData.maxHealth;
+        maxHealth = charData.maxHealth;
         animator = this.GetComponent<PixelartAnimator>();
         rigidBody = this.GetComponent<Rigidbody2D>();
         heldGun = this.GetComponentInChildren<Gun>();
@@ -37,7 +39,7 @@ public abstract class ICharacter : MonoBehaviour
 
     public float Hit(float damage, Vector2 knockback)
     {
-        rigidBody.AddForce(knockback * 20000f, ForceMode2D.Impulse);
+        rigidBody.AddForce(knockback * 5000f, ForceMode2D.Impulse);
 
         //Check for damage overflow
         if (health < damage)

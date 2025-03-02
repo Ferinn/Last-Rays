@@ -4,13 +4,32 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] ICharacter player;
     [SerializeField] GameObject UI;
+    [SerializeField] GameObject lightPreview;
     private bool uiState = false;
+
+    object padlock = new object();
 
     private void Awake()
     {
         uiState = false;
         UI.SetActive(false);
+
+        for (int i = 0; i < lightPreview.transform.childCount; i++)
+        {
+            GameObject previewSource = lightPreview.transform.GetChild(i).gameObject;
+
+            previewSource.SetActive(false);
+        }
+    }
+
+    public ICharacter GetPlayer()
+    {
+        lock (padlock)
+        {
+            return player;
+        }
     }
 
     public void ToggleUI()

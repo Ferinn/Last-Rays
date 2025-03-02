@@ -7,7 +7,7 @@ using States = NonPlayerCharacter.FSM_States;
 
 public class NonPlayerCharacter : ICharacter
 {
-    [SerializeField] ICharacter player;
+    private ICharacter player;
 
     bool attacking = false;
     FSM_States state = FSM_States.Idle;
@@ -37,7 +37,7 @@ public class NonPlayerCharacter : ICharacter
     // Start is called before the first frame update
     void Start()
     {
-
+        player = Managers.gameManager.GetPlayer();
     }
 
     // Update is called once per frame

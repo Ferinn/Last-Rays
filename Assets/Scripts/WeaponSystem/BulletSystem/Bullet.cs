@@ -10,7 +10,6 @@ public class Bullet
     public GameObject bulletGO;
     private BulletPool pool;
     private TrailRenderer trailRenderer;
-
     private ShotInfo shotInfo;
     
     private Vector2 currentPosition;
@@ -115,7 +114,7 @@ public class Bullet
                 limitedDamage = damageOverflow != 0 ? damageOverflow : limitedDamage;
 
                 damageOverflow = character.Hit(limitedDamage, Vector2.zero);
-                if (damageOverflow == 0)
+                if (damageOverflow == 0 || !shotInfo.piercing)
                 {
                     Falloff();
                     return;
