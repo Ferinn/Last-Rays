@@ -87,7 +87,7 @@ public class PlayerCharacter : ICharacter
         heldGun.gameObject.transform.localPosition = defaultWeaponPos;
         heldGun.gameObject.transform.localRotation = Quaternion.identity;
 
-        heldGun.lastFired = Time.time;
+        heldGun.LastFired(Time.time);
     }
 
     private void UpdateVignette()
@@ -108,24 +108,4 @@ public class PlayerCharacter : ICharacter
             dmgVignetteFeature.passMaterial.SetFloat("_VignetteIntensity", vignetteIntensityMin);
         }
     }
-
-    // private FullScreenPassRendererFeature GetVignetteFeature()
-    // {
-    //     var urpAsset = (UniversalRenderPipelineAsset)GraphicsSettings.renderPipelineAsset;
-
-    //     var _rendererFeatures = urpAsset.scriptableRenderer.GetType()
-    //         .GetProperty("rendererFeatures", BindingFlags.NonPublic | BindingFlags.Instance)
-    //         ?.GetValue(urpAsset.scriptableRenderer, null) as List<ScriptableRendererFeature>;
-
-    //     for (int i = 0; i < _rendererFeatures.Count; i++)
-    //     {
-    //         if (_rendererFeatures[i] is FullScreenPassRendererFeature)
-    //         {
-    //             Debug.Log("FOUND!!!");
-    //             return (FullScreenPassRendererFeature)_rendererFeatures[i];
-    //         }
-    //     }
-
-    //     return null;
-    // }
 }

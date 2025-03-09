@@ -39,15 +39,11 @@ public class PlayerController
 
     private void HandleReload()
     {
-        if (Input.GetKeyDown(KeyCode.R) && !character.heldGun.isReloading)
+        if (Input.GetKeyDown(KeyCode.R) && !character.heldGun.IsReloading)
         {
             Debug.Log("Reloading!");
-            character.heldGun.Reload(ReportReloaded);
+            character.heldGun.Reload();
         }
-    }
-    public void ReportReloaded()
-    {
-        Debug.Log("Done!");
     }
 
     public void Move()
@@ -85,7 +81,7 @@ public class PlayerController
             {
                 character.EquipWeapon(character.equippedIndex - 1);
             }
-            Managers.audioManger.PlaySFX(SFXSounds.handgun_pickup, character.transform, true);
+            Managers.audioManager.PlaySFX(SFXSounds.handgun_pickup, character.transform, true);
         }
     }
 
