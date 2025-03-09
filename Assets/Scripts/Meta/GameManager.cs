@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] ICharacter player;
+    [SerializeField] PlayerCharacter player;
     [SerializeField] GameObject UI;
     [SerializeField] GameObject lightPreview;
     private bool uiState = false;
 
     object padlock = new object();
+
+    void OnApplicationQuit()
+    {
+        player.ResetVignette();
+    }
 
     private void Awake()
     {

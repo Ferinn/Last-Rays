@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -8,22 +9,26 @@ public class Gun : MonoBehaviour
     private GunAimer aimer;
     private GunShooter shooter;
     private GunAmmo ammo;
+    private GunModulator gunModulator;
     private GunEffects effects;
 
     private float lastFired;
     private float shotCooldown;
     public bool IsReloading => ammo.IsReloading;
-
+    public GunStats stats;
     
     private void Awake()
     {
         lastFired = 0f;
         shotCooldown = 1f / data.fireRate;
 
-        aimer = new GunAimer(transform, data);
-        ammo = new GunAmmo((int)data.clipSize);
-        shooter = new GunShooter(data, ammo, aimer, this.transform);
-        effects = new GunEffects(data);
+        stats = new GunStats(data); //gunData required for gunModulator to function
+        effects = new GunEffects(data); //barrelOffset not contained in gunStats
+        gunModulator = new GunModulator(data, stats); //gunData required for gunModulator to function
+
+        aimer = new GunAimer(transform, stats);
+        ammo = new GunAmmo((int)stats.clipSize);
+        shooter = new GunShooter(stats, ammo, aimer, this.transform);
     }
 
     private void LateUpdate()
@@ -54,7 +59,7 @@ public class Gun : MonoBehaviour
 
     public void Reload() => ammo.Reload(() => effects.PlayReloadSound(transform));
 
-    public GunData GetGunData() => data;
+    public GunData GetGunData() => stats;
 
     public float GetTravelTime(Vector2 target)
     {

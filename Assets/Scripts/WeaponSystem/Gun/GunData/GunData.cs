@@ -5,6 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "WeaponSystem", menuName = "GunData", order = 0)]
 public class GunData : ScriptableObject
 {
+    public GunData Clone()
+    {
+        return Instantiate(this);
+    }
+
     [Range(1, 60)] public float fireRate; //per second
     public float maxSpread = 15f; //in euler angles
     public float spreadIncrement = 2f; //per shot

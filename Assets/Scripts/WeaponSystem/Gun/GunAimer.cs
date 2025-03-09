@@ -7,10 +7,10 @@ public class GunAimer
     private SpriteRenderer spriteRenderer;
     private int facing = 1;
 
-    public GunAimer(Transform transform, GunData data)
+    public GunAimer(Transform transform, GunStats stats)
     {
         this.gunTransform = transform;
-        this.aimHandler = new AimHandler(data.maxSpread, data.spreadIncrement, data.spreadDecayDur);
+        this.aimHandler = new AimHandler(stats.maxSpread, stats.spreadIncrement, stats.spreadDecayDur);
         this.spriteRenderer = transform.GetComponent<SpriteRenderer>();
     }
 

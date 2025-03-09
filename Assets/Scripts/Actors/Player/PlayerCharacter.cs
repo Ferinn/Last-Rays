@@ -14,9 +14,6 @@ public class PlayerCharacter : ICharacter
     [Header("--- VFX ---")]
     public GameObject flashlight;
     [SerializeField] FullScreenPassRendererFeature dmgVignetteFeature;
-    [SerializeField] Material dmgVignetteMat;
-    [Range(0f, 10f)] public float vignettePowerMax;
-    private float vignettePowerMin = 5f;
     [Range(0f, 10f)] public float vignetteIntensityMax;
     private float vignetteIntensityMin = 5f;
 
@@ -37,10 +34,6 @@ public class PlayerCharacter : ICharacter
         Cursor.visible = false;
         controller = new PlayerController(this, crosshair, rigidBody, crosshairMaxSize, crosshairMinSize);
         camController = transform.GetComponentInChildren<CamController>();
-
-        //dmgVignetteFeature = GetVignetteFeature();
-        dmgVignetteFeature.passMaterial = new Material(dmgVignetteMat);
-        dmgVignetteFeature.Create();
 
         LoadWeapons();
         EquipWeapon(0);
@@ -96,16 +89,18 @@ public class PlayerCharacter : ICharacter
 
         if (healthStage <= 0.5f)
         {
-            //float vignettePower = Mathf.Lerp(vignettePowerMax, vignettePowerMin, healthStage);
             float VignetteIntensity = Mathf.Lerp(vignetteIntensityMax, 0.75f, healthStage);
 
-            //dmgVignetteFeature.passMaterial.SetFloat("_VignettePower", vignettePower);
             dmgVignetteFeature.passMaterial.SetFloat("_VignetteIntensity", VignetteIntensity);
         }
         else
         {
-            dmgVignetteFeature.passMaterial.SetFloat("_VignettePower", vignetteIntensityMin);
             dmgVignetteFeature.passMaterial.SetFloat("_VignetteIntensity", vignetteIntensityMin);
         }
+    }
+
+    public void ResetVignette()
+    {
+        dmgVignetteFeature.passMaterial.SetFloat("_VignetteIntensity", 0.75f);
     }
 }
