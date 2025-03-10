@@ -11,11 +11,6 @@ public class GameManager : MonoBehaviour
 
     object padlock = new object();
 
-    void OnApplicationQuit()
-    {
-        player.ResetVignette();
-    }
-
     private void Awake()
     {
         uiState = false;

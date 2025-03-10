@@ -72,6 +72,8 @@ public class PlayerCharacter : ICharacter
 
     public void EquipWeapon(int index)
     {
+        Gun oldGun = heldGun;
+
         weapons[equippedIndex].SetActive(false);
         equippedIndex = index % weapons.Count;
         equippedIndex = equippedIndex < 0 ? weapons.Count - 1 : equippedIndex;
@@ -79,6 +81,11 @@ public class PlayerCharacter : ICharacter
         heldGun.gameObject.SetActive(true);
         heldGun.gameObject.transform.localPosition = defaultWeaponPos;
         heldGun.gameObject.transform.localRotation = Quaternion.identity;
+
+        if (oldGun != heldGun)
+        {
+            Managers.audioManager.PlaySFX(SFXSounds.handgun_pickup, this.transform, true);
+        }
 
         heldGun.LastFired(Time.time);
     }

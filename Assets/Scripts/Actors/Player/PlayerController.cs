@@ -81,7 +81,6 @@ public class PlayerController
             {
                 character.EquipWeapon(character.equippedIndex - 1);
             }
-            Managers.audioManager.PlaySFX(SFXSounds.handgun_pickup, character.transform, true);
         }
     }
 
