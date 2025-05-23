@@ -26,6 +26,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip handgunShot;
     [SerializeField] private AudioClip handgunReload;
 
+
+    private const float clipLengthOffset = 1; //1 second offset to avoid abrupt clip cutting
+
     private void Awake()
     {
         activePool = new List<AudioSource>(defaultPoolSize);
@@ -49,7 +52,8 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator ClipEnd(float clipLength, AudioSource source)
     {
-        yield return new WaitForSeconds(clipLength);
+        // constant offset to ensure smooth end of clips
+        yield return new WaitForSeconds(clipLength + clipLengthOffset);
 
         source.Stop();
         SetActive(source, false);

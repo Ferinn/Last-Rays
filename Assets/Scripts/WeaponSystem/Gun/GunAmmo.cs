@@ -23,20 +23,16 @@ public class GunAmmo
         return true;
     }
 
-    public void Reload(System.Action onReloadComplete)
+    public void Reload()
     {
-        if (!isReloading)
-        {
-            isReloading = true;
-            CoroutineRunner.Instance.StartCoroutine(ReloadCoroutine(onReloadComplete));
-        }
+        isReloading = true;
+        CoroutineRunner.Instance.StartCoroutine(ReloadCoroutine());
     }
 
-    private IEnumerator ReloadCoroutine(System.Action onReloadComplete)
+    private IEnumerator ReloadCoroutine()
     {
         yield return new WaitForSeconds(1.5f); // Replace with gunData.reloadDuration
         currentAmmo = maxAmmo;
         isReloading = false;
-        onReloadComplete?.Invoke();
     }
 }

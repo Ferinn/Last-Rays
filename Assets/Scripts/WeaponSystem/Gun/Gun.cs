@@ -41,23 +41,33 @@ public class Gun : MonoBehaviour
     
     public bool Fire(Vector2 targetDir)
     {
-        if (ammo.IsReloading || !shooter.CanShoot(lastFired, shotCooldown))
+        if (ammo.IsReloading || !shooter.CanShoot(lastFired, shotCooldown) || !ammo.UseBullet())
+        {
+            if (ammo.IsEmpty)
+            {
+                Reload();
+            }
             return false;
+        }
 
         lastFired = Time.time;
-        bool success = shooter.Fire(targetDir);
+        shooter.Fire(targetDir);
         effects.PlayGunshotSound(transform);
         effects.SpawnMuzzleFlash(transform);
 
-        if (ammo.IsEmpty)
-            Reload();
-
-        return success;
+        return true;
     }
 
     public float LastFired(float time) => this.lastFired = time;
 
-    public void Reload() => ammo.Reload(() => effects.PlayReloadSound(transform));
+    public void Reload()
+    {
+        if (!ammo.IsReloading)
+        {
+            effects.PlayReloadSound(transform);
+            ammo.Reload();
+        }
+    }
 
     public GunData GetGunData() => stats;
 

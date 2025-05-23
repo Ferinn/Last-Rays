@@ -19,13 +19,10 @@ public class GunShooter
 
     public bool CanShoot(float lastFired, float cooldown) => (Time.time - lastFired) > cooldown;
 
-    public bool Fire(Vector2 direction)
+    public void Fire(Vector2 direction)
     {
-        if (!ammo.UseBullet()) return false;
-
         float angleOffset = aimer.AimAt(direction);
         FireBullets(direction, angleOffset);
-        return true;
     }
 
     private void FireBullets(Vector2 direction, float spread)

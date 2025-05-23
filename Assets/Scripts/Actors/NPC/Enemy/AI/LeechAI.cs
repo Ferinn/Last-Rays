@@ -58,6 +58,9 @@ public class NonPlayerCharacter : ICharacter
         if (thisToPlayer.magnitude <= attackRange)
         {
             Vector2 attackVector = thisToPlayer.normalized;
+            ICharacter character = player;
+            character.Hit(attackDamage, attackVector * attackKnockback);
+            /*Vector2 attackVector = thisToPlayer.normalized;
 
             RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, attackVector, attackRange);
             for (int i = 0; i < hits.Length; i++)
@@ -78,7 +81,7 @@ public class NonPlayerCharacter : ICharacter
                     }
                     break;
                 }
-            }
+            }*/
         }
         attacking = false;
     }

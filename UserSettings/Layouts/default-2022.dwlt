@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 175
+  controlID: 109
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 18
+  controlID: 41
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -167,8 +167,8 @@ MonoBehaviour:
     y: 0
     width: 605
     height: 519
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -244,18 +244,18 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1296
-    height: 982
+    height: 967
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 27}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 27}
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,24 +266,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 982
+    y: 967
     width: 1296
-    height: 317
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 23}
+    height: 332
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 22}
   - {fileID: 15}
   - {fileID: 23}
-  m_Selected: 2
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 176
+  controlID: 165
   draggingID: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -329,8 +329,8 @@ MonoBehaviour:
     y: 0
     width: 659
     height: 1007
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -356,8 +356,8 @@ MonoBehaviour:
     y: 1007
     width: 659
     height: 292
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 26}
   m_Panes:
   - {fileID: 26}
@@ -384,9 +384,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 605
-    y: 1055
+    y: 1040
     width: 1294
-    height: 296
+    height: 311
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/UI/Gun Mod/Prefabs/Yellow
+    - Assets/Scripts/Actors/Data
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -416,16 +416,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/UI/Gun Mod/Prefabs/Yellow
+  - Assets/Scripts/Actors/Data
   m_LastFoldersGridSize: 72
   m_LastProjectPath: C:\Runescribe Projects\Last Rays
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 812}
-    m_SelectedIDs: e6b60000
-    m_LastClickedID: 46822
-    m_ExpandedIDs: 000000008283000084830000c2880000c4880000c6880000c8880000ca880000cc880000ce880000d0880000d2880000d4880000d6880000d8880000da880000dc880000de880000e0880000e2880000e4880000e6880000e8880000ea880000ec880000ee880000f0880000f2880000f4880000ce8d0000d08d0000e08d0000e48d000000ca9a3b
+    scrollPos: {x: 0, y: 205}
+    m_SelectedIDs: c08f0000
+    m_LastClickedID: 36800
+    m_ExpandedIDs: 00000000d8830000f6840000f08a0000f28a0000f48a0000f68a0000f88a0000fa8a0000fc8a0000fe8a0000008b0000028b0000048b0000068b0000088b00000a8b00000c8b00000e8b0000108b0000128b0000148b0000168b0000188b00001a8b00001c8b00001e8b0000208b0000228b0000c28f0000fc8f0000549000005690000056c5000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -453,7 +453,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008283000084830000c2880000c4880000c6880000c8880000ca880000cc880000ce880000d0880000d2880000d4880000d6880000d8880000da880000dc880000de880000e0880000e2880000e4880000e6880000e8880000ea880000ec880000ee880000f0880000f2880000f4880000
+    m_ExpandedIDs: 00000000d8830000f6840000f08a0000f28a0000f48a0000f68a0000f88a0000fa8a0000fc8a0000fe8a0000008b0000028b0000048b0000068b0000088b00000a8b00000c8b00000e8b0000108b0000128b0000148b0000168b0000188b00001a8b00001c8b00001e8b0000208b0000228b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -478,8 +478,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f6faffff
-    m_LastClickedInstanceID: -1290
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: d86b0000e0720000fa7d0000000000009e730000747100007a710000b6710000be790000f0790000ec7900003c7a0000d06e0000e86e0000f66700009a670000066700005464000062650000286400000c6300000e630000a8640000a87b0000a280000030850000744100008041000048410000d48200009207000096860000588e00005a8e0000e08d0000
     m_RenameOverlay:
@@ -546,9 +546,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f6faffff
-      m_LastClickedID: -1290
-      m_ExpandedIDs: 88c8feff8cc8feff6ae3fefffae3fefffee3feff82e4feff18e5feff1ce5feff5ef7feffbaf8feff42fffeffc00dffffec2cffff864dffff664fffff2c50fffff674fffffe74ffffbcaeffffa6afffff84cfffff8ccfffff94cfffffdaf9ffffbefafffff6faffff16fbffff18fbffff328100003e81000046810000768100004e82000078820000bc820000ea820000
+      m_SelectedIDs: 0a7f0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 08f5ffff18fbffff86900000a29200006a940000dc940000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -633,7 +633,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c2760000
     m_LastClickedID: 30402
-    m_ExpandedIDs: 000000008283000084830000c2880000c4880000c6880000c8880000ca880000cc880000ce880000d0880000d2880000d4880000d6880000d8880000da880000dc880000de880000e0880000e2880000e4880000e6880000e8880000ea880000ec880000ee880000f0880000f2880000f4880000
+    m_ExpandedIDs: 00000000d8830000f6840000f08a0000f28a0000f48a0000f68a0000f88a0000fa8a0000fc8a0000fe8a0000008b0000028b0000048b0000068b0000088b00000a8b00000c8b00000e8b0000108b0000128b0000148b0000168b0000188b00001a8b00001c8b00001e8b0000208b0000228b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -661,7 +661,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 39}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000008283000084830000c2880000c4880000c6880000c8880000ca880000cc880000ce880000d0880000d2880000d4880000d6880000d8880000da880000dc880000de880000e0880000e2880000e4880000e6880000e8880000ea880000ec880000ee880000f0880000f2880000f4880000
+    m_ExpandedIDs: ffffffff00000000d8830000f6840000f08a0000f28a0000f48a0000f68a0000f88a0000fa8a0000fc8a0000fe8a0000008b0000028b0000048b0000068b0000088b00000a8b00000c8b00000e8b0000108b0000128b0000148b0000168b0000188b00001a8b00001c8b00001e8b0000208b0000228b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -740,7 +740,7 @@ MonoBehaviour:
     x: 605
     y: 73
     width: 1294
-    height: 961
+    height: 946
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1027,7 +1027,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__top
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -1151,9 +1151,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1334.9727, y: 667.8459, z: -3.2312887}
+    m_Target: {x: 9.031088, y: 7.5780025, z: 6.5075994}
     speed: 2
-    m_Value: {x: 1327.155, y: 690.1462, z: -3.6998396}
+    m_Value: {x: 9.031088, y: 7.5780025, z: 6.5075994}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1203,9 +1203,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 994.3808
+    m_Target: 20.504416
     speed: 2
-    m_Value: 1041.2365
+    m_Value: 20.504416
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1574,9 +1574,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 605
-    y: 1055
+    y: 1040
     width: 1294
-    height: 296
+    height: 311
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1608,9 +1608,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 605
-    y: 1055
+    y: 1040
     width: 1294
-    height: 296
+    height: 311
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1628,7 +1628,7 @@ MonoBehaviour:
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 1
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -1787,10 +1787,10 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2025-03-09T11:57:27.472+01:00
+      updatedTimeString: 2025-04-18T10:38:02.215+02:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2025-03-09T11:57:27.555+01:00
+      updatedTimeString: 2025-04-18T10:03:40.516+02:00
       cacheType: 1
     currentBranch:
       name: master
@@ -1812,9 +1812,9 @@ MonoBehaviour:
     - name: origin/master
       tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
+    currentBranchHasUpdate: 1
+    currentStatusEntriesHasUpdate: 1
+    currentLocksHasUpdate: 1
     commitBody: 
     commitMessage: 
     currentBranch: master
@@ -1876,18 +1876,873 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-03-11T22:17:38.232+01:00
+      updatedTimeString: 2025-05-22T15:18:37.493+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-03-11T22:17:30.947+01:00
+      updatedTimeString: 2025-05-22T16:01:24.082+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2025-03-11T20:40:13.978+01:00
+      updatedTimeString: 2025-05-22T16:01:24.109+02:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 12f3e6dded90ef0ad9e2620f79911c8c63df0b49
+      mergeA: 
+      mergeB: 
+      authorName: Ferinn
+      authorEmail: ferin.pol@outlook.com
+      commitEmail: ferin.pol@outlook.com
+      commitName: Ferinn
+      summary: UI Adjustments
+      description: Resizing UI, increasing readability
+      timeString: 2025-04-18T10:38:01.000+02:00
+      commitTimeString: 2025-04-18T10:38:01.000+02:00
+      changes:
+      - path: Assets\Scenes\Weapon Mod Scene.unity
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity
+        projectPath: Assets\Scenes\Weapon Mod Scene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+          Stat Element.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+          Vertical Element List.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Slot
+          Backdrop.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+          Stat Element.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 5328d955b4c0b99d104c82447a1646c1c15a2292
+      mergeA: 
+      mergeB: 
+      authorName: Ferinn
+      authorEmail: ferin.pol@outlook.com
+      commitEmail: ferin.pol@outlook.com
+      commitName: Ferinn
+      summary: Further UI work
+      description: 
+      timeString: 2025-03-11T22:17:29.000+01:00
+      commitTimeString: 2025-03-11T22:17:29.000+01:00
+      changes:
+      - path: Assets\Scenes\Weapon Mod Scene.unity
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity
+        projectPath: Assets\Scenes\Weapon Mod Scene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\UI\General Elements.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\General Elements.meta
+        projectPath: Assets\UI\General Elements.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\General Elements\Description.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\General Elements\Description.prefab
+        projectPath: Assets\UI\General Elements\Description.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\General Elements\Description.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\General Elements\Description.prefab.meta
+        projectPath: Assets\UI\General Elements\Description.prefab.meta
+        originalPath: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Card Image.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Card
+          Image.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Card Image.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Card Image.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Card
+          Image.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Card Image.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+          Stat Element.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab
+        originalPath: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+          Stat Element.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab.meta
+        originalPath: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+          Vertical Element List.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+          Vertical Element List.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Slot
+          Backdrop.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab
+        originalPath: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Slot
+          Backdrop.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab.meta
+        originalPath: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Yellow.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Yellow.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+          Stat Element.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab
+        originalPath: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+          Stat Element.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Vertical Element.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+          Vertical Element.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Vertical Element.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Vertical Element.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+          Vertical Element.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Vertical Element.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 474acad212f67752c09bca597b595d8efdd92077
+      mergeA: 
+      mergeB: 
+      authorName: Ferinn
+      authorEmail: ferin.pol@outlook.com
+      commitEmail: ferin.pol@outlook.com
+      commitName: Ferinn
+      summary: Modification UI development
+      description: 
+      timeString: 2025-03-11T21:46:52.000+01:00
+      commitTimeString: 2025-03-11T21:46:52.000+01:00
+      changes:
+      - path: Assets\Scenes\Weapon Mod Scene.unity
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity
+        projectPath: Assets\Scenes\Weapon Mod Scene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Sprites\Items\Mods.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods.meta
+        projectPath: Assets\Sprites\Items\Mods.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Items\Mods\Mod_1.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_1.png
+        projectPath: Assets\Sprites\Items\Mods\Mod_1.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Items\Mods\Mod_1.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_1.png.meta
+        projectPath: Assets\Sprites\Items\Mods\Mod_1.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Items\Mods\Mod_2.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_2.png
+        projectPath: Assets\Sprites\Items\Mods\Mod_2.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Items\Mods\Mod_2.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_2.png.meta
+        projectPath: Assets\Sprites\Items\Mods\Mod_2.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Items\Mods\Mod_3.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_3.png
+        projectPath: Assets\Sprites\Items\Mods\Mod_3.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Sprites\Items\Mods\Mod_3.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_3.png.meta
+        projectPath: Assets\Sprites\Items\Mods\Mod_3.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Anton
+          SDF.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples &
+          Extras\Resources\Fonts & Materials\Anton SDF.asset
+        projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Anton
+          SDF.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Bangers
+          SDF.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples &
+          Extras\Resources\Fonts & Materials\Bangers SDF.asset
+        projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Bangers
+          SDF.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Electronic
+          Highway Sign SDF.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples &
+          Extras\Resources\Fonts & Materials\Electronic Highway Sign SDF.asset
+        projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Electronic
+          Highway Sign SDF.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Oswald
+          Bold SDF.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples &
+          Extras\Resources\Fonts & Materials\Oswald Bold SDF.asset
+        projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Oswald
+          Bold SDF.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Roboto-Bold
+          SDF.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples &
+          Extras\Resources\Fonts & Materials\Roboto-Bold SDF.asset
+        projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Roboto-Bold
+          SDF.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
+          - Fallback.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Resources\Fonts
+          & Materials\LiberationSans SDF - Fallback.asset
+        projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+          SDF - Fallback.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\UI.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI.meta
+        projectPath: Assets\UI.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo.meta
+        projectPath: Assets\UI\Ammo.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo\Bullet_Pair.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Bullet_Pair.png
+        projectPath: Assets\UI\Ammo\Bullet_Pair.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo\Bullet_Pair.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Bullet_Pair.png.meta
+        projectPath: Assets\UI\Ammo\Bullet_Pair.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo\Bullet_Single.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Bullet_Single.png
+        projectPath: Assets\UI\Ammo\Bullet_Single.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo\Bullet_Single.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Bullet_Single.png.meta
+        projectPath: Assets\UI\Ammo\Bullet_Single.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo\Empty_Bullet_Pair.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Empty_Bullet_Pair.png
+        projectPath: Assets\UI\Ammo\Empty_Bullet_Pair.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo\Empty_Bullet_Pair.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Empty_Bullet_Pair.png.meta
+        projectPath: Assets\UI\Ammo\Empty_Bullet_Pair.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo\Empty_Bullet_Single.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Empty_Bullet_Single.png
+        projectPath: Assets\UI\Ammo\Empty_Bullet_Single.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Ammo\Empty_Bullet_Single.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Empty_Bullet_Single.png.meta
+        projectPath: Assets\UI\Ammo\Empty_Bullet_Single.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes.meta
+        projectPath: Assets\UI\Boxes.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan.meta
+        projectPath: Assets\UI\Boxes\Cyan.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png
+        projectPath: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png.meta
+        projectPath: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png
+        projectPath: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png.meta
+        projectPath: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png
+        projectPath: Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png.meta
+        projectPath: Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan\Cyan_Default_Box.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Default_Box.png
+        projectPath: Assets\UI\Boxes\Cyan\Cyan_Default_Box.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Cyan\Cyan_Default_Box.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Default_Box.png.meta
+        projectPath: Assets\UI\Boxes\Cyan\Cyan_Default_Box.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Progress bar.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar.meta
+        projectPath: Assets\UI\Boxes\Progress bar.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Progress bar\Bar.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Bar.png
+        projectPath: Assets\UI\Boxes\Progress bar\Bar.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Progress bar\Bar.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Bar.png.meta
+        projectPath: Assets\UI\Boxes\Progress bar\Bar.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Progress bar\Progress bar_IBS.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Progress
+          bar_IBS.png
+        projectPath: Assets\UI\Boxes\Progress bar\Progress bar_IBS.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Progress bar\Progress bar_IBS.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Progress
+          bar_IBS.png.meta
+        projectPath: Assets\UI\Boxes\Progress bar\Progress bar_IBS.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Progress bar\Progress bar_WIB.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Progress
+          bar_WIB.png
+        projectPath: Assets\UI\Boxes\Progress bar\Progress bar_WIB.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Progress bar\Progress bar_WIB.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Progress
+          bar_WIB.png.meta
+        projectPath: Assets\UI\Boxes\Progress bar\Progress bar_WIB.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow.meta
+        projectPath: Assets\UI\Boxes\Yellow.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png
+        projectPath: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png.meta
+        projectPath: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png
+        projectPath: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png.meta
+        projectPath: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png
+        projectPath: Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png.meta
+        projectPath: Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png
+        projectPath: Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png.meta
+        projectPath: Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod.meta
+        projectPath: Assets\UI\Gun Mod.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Bullet.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Bullet.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Bullet.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Bullet.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Bullet.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Bullet.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Gun
+          Stat Element.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Gun
+          Stat Element.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Mod
+          Stat Element.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Mod
+          Stat Element.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Slot
+          Backdrop.prefab
+        projectPath: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Slot
+          Backdrop.prefab.meta
+        projectPath: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 3970388848ed30561078c0da3677c43568227863
+      mergeA: 
+      mergeB: 
+      authorName: Ferinn
+      authorEmail: ferin.pol@outlook.com
+      commitEmail: ferin.pol@outlook.com
+      commitName: Ferinn
+      summary: Weapon mod UI start (secondary scene)
+      description: 
+      timeString: 2025-03-10T17:28:43.000+01:00
+      commitTimeString: 2025-03-10T17:28:43.000+01:00
+      changes:
+      - path: Assets\Scenes\Main Scene.unity
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Main Scene.unity
+        projectPath: Assets\Scenes\Main Scene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\Weapon Mod Scene.unity
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity
+        projectPath: Assets\Scenes\Weapon Mod Scene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\Weapon Mod Scene.unity.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity.meta
+        projectPath: Assets\Scenes\Weapon Mod Scene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\Actors\Player\PlayerCharacter.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Actors\Player\PlayerCharacter.cs
+        projectPath: Assets\Scripts\Actors\Player\PlayerCharacter.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Actors\Player\PlayerController.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Actors\Player\PlayerController.cs
+        projectPath: Assets\Scripts\Actors\Player\PlayerController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Meta\GameManager.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Meta\GameManager.cs
+        projectPath: Assets\Scripts\Meta\GameManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Shaders\DamageIndicator\VignetteMat.mat
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Shaders\DamageIndicator\VignetteMat.mat
+        projectPath: Assets\Shaders\DamageIndicator\VignetteMat.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\Runescribe Projects\Last Rays\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: f3bddbf4dc579aa83630830149aea23bd92447ad
+      mergeA: 
+      mergeB: 
+      authorName: Ferinn
+      authorEmail: ferin.pol@outlook.com
+      commitEmail: ferin.pol@outlook.com
+      commitName: Ferinn
+      summary: Further refactoring, basic gunModule implementation, vignette mat
+        null refference fix.
+      description: 
+      timeString: 2025-03-09T13:34:12.000+01:00
+      commitTimeString: 2025-03-09T13:34:12.000+01:00
+      changes:
+      - path: Assets\Scenes\Main Scene.unity
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Main Scene.unity
+        projectPath: Assets\Scenes\Main Scene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Actors\Player\PlayerCharacter.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Actors\Player\PlayerCharacter.cs
+        projectPath: Assets\Scripts\Actors\Player\PlayerCharacter.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Meta\GameManager.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Meta\GameManager.cs
+        projectPath: Assets\Scripts\Meta\GameManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs
+        projectPath: Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs
+        originalPath: Assets\Scripts\WeaponSystem\ShotInfo.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs.meta
+        projectPath: Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs.meta
+        originalPath: Assets\Scripts\WeaponSystem\ShotInfo.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\AimHandler.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\AimHandler.cs
+        projectPath: Assets\Scripts\WeaponSystem\Gun\AimHandler.cs
+        originalPath: Assets\Scripts\WeaponSystem\AimHandler.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\AimHandler.cs.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\AimHandler.cs.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\AimHandler.cs.meta
+        originalPath: Assets\Scripts\WeaponSystem\AimHandler.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\Gun.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\Gun.cs
+        projectPath: Assets\Scripts\WeaponSystem\Gun\Gun.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunAimer.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunAimer.cs
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunAimer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData.meta
+        originalPath: Assets\Scripts\WeaponSystem\GunData.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs
+        originalPath: Assets\Scripts\WeaponSystem\GunData.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs.meta
+        originalPath: Assets\Scripts\WeaponSystem\GunData.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset
+        originalPath: Assets\Scripts\WeaponSystem\GunData\Pistol.asset
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset.meta
+        originalPath: Assets\Scripts\WeaponSystem\GunData\Pistol.asset.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset
+        originalPath: Assets\Scripts\WeaponSystem\GunData\Rifle.asset
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset.meta
+        originalPath: Assets\Scripts\WeaponSystem\GunData\Rifle.asset.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset
+        originalPath: Assets\Scripts\WeaponSystem\GunData\Shotgun.asset
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset.meta
+        originalPath: Assets\Scripts\WeaponSystem\GunData\Shotgun.asset.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset.meta
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset.meta
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\WeaponSystem\Gun\GunShooter.cs
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunShooter.cs
+        projectPath: Assets\Scripts\WeaponSystem\Gun\GunShooter.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Shaders\DamageIndicator\VignetteMat.mat
+        fullPath: C:\Runescribe Projects\Last Rays\Assets\Shaders\DamageIndicator\VignetteMat.mat
+        projectPath: Assets\Shaders\DamageIndicator\VignetteMat.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+        fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+        projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: ff19fde2c03b51f5be2c356bd5897056a0511a72
       mergeA: 
       mergeB: 
@@ -25248,16 +26103,871 @@ MonoBehaviour:
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-    statusAhead: 0
+    statusAhead: 1
     lastLogChangedEvent:
-      updatedTimeString: 2025-03-09T11:57:27.560+01:00
+      updatedTimeString: 2025-04-18T10:38:03.363+02:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2025-03-09T11:57:27.524+01:00
+      updatedTimeString: 2025-04-18T10:38:03.284+02:00
       cacheType: 5
     historyControl:
-      scroll: {x: 0, y: 40}
+      scroll: {x: 0, y: 240}
       entries:
+      - commitID: 12f3e6dded90ef0ad9e2620f79911c8c63df0b49
+        mergeA: 
+        mergeB: 
+        authorName: Ferinn
+        authorEmail: ferin.pol@outlook.com
+        commitEmail: ferin.pol@outlook.com
+        commitName: Ferinn
+        summary: UI Adjustments
+        description: Resizing UI, increasing readability
+        timeString: 2025-04-18T10:38:01.000+02:00
+        commitTimeString: 2025-04-18T10:38:01.000+02:00
+        changes:
+        - path: Assets\Scenes\Weapon Mod Scene.unity
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity
+          projectPath: Assets\Scenes\Weapon Mod Scene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+            Stat Element.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+            Vertical Element List.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Slot
+            Backdrop.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+            Stat Element.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 5328d955b4c0b99d104c82447a1646c1c15a2292
+        mergeA: 
+        mergeB: 
+        authorName: Ferinn
+        authorEmail: ferin.pol@outlook.com
+        commitEmail: ferin.pol@outlook.com
+        commitName: Ferinn
+        summary: Further UI work
+        description: 
+        timeString: 2025-03-11T22:17:29.000+01:00
+        commitTimeString: 2025-03-11T22:17:29.000+01:00
+        changes:
+        - path: Assets\Scenes\Weapon Mod Scene.unity
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity
+          projectPath: Assets\Scenes\Weapon Mod Scene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\UI\General Elements.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\General Elements.meta
+          projectPath: Assets\UI\General Elements.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\General Elements\Description.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\General Elements\Description.prefab
+          projectPath: Assets\UI\General Elements\Description.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\General Elements\Description.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\General Elements\Description.prefab.meta
+          projectPath: Assets\UI\General Elements\Description.prefab.meta
+          originalPath: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Card Image.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Card
+            Image.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Card Image.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Card Image.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Card
+            Image.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Card Image.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+            Stat Element.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab
+          originalPath: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+            Stat Element.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Stat Element.prefab.meta
+          originalPath: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+            Vertical Element List.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Cyan
+            Vertical Element List.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Cyan Vertical Element List.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Slot
+            Backdrop.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab
+          originalPath: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Cyan\Slot
+            Backdrop.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Cyan\Slot Backdrop.prefab.meta
+          originalPath: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Yellow.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Yellow.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+            Stat Element.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab
+          originalPath: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+            Stat Element.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Stat Element.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Vertical Element.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+            Vertical Element.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Vertical Element.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Vertical Element.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Yellow\Yellow
+            Vertical Element.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Yellow\Yellow Vertical Element.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 474acad212f67752c09bca597b595d8efdd92077
+        mergeA: 
+        mergeB: 
+        authorName: Ferinn
+        authorEmail: ferin.pol@outlook.com
+        commitEmail: ferin.pol@outlook.com
+        commitName: Ferinn
+        summary: Modification UI development
+        description: 
+        timeString: 2025-03-11T21:46:52.000+01:00
+        commitTimeString: 2025-03-11T21:46:52.000+01:00
+        changes:
+        - path: Assets\Scenes\Weapon Mod Scene.unity
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity
+          projectPath: Assets\Scenes\Weapon Mod Scene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Sprites\Items\Mods.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods.meta
+          projectPath: Assets\Sprites\Items\Mods.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Items\Mods\Mod_1.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_1.png
+          projectPath: Assets\Sprites\Items\Mods\Mod_1.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Items\Mods\Mod_1.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_1.png.meta
+          projectPath: Assets\Sprites\Items\Mods\Mod_1.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Items\Mods\Mod_2.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_2.png
+          projectPath: Assets\Sprites\Items\Mods\Mod_2.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Items\Mods\Mod_2.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_2.png.meta
+          projectPath: Assets\Sprites\Items\Mods\Mod_2.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Items\Mods\Mod_3.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_3.png
+          projectPath: Assets\Sprites\Items\Mods\Mod_3.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Sprites\Items\Mods\Mod_3.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Sprites\Items\Mods\Mod_3.png.meta
+          projectPath: Assets\Sprites\Items\Mods\Mod_3.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Anton
+            SDF.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples
+            & Extras\Resources\Fonts & Materials\Anton SDF.asset
+          projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Anton
+            SDF.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Bangers
+            SDF.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples
+            & Extras\Resources\Fonts & Materials\Bangers SDF.asset
+          projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Bangers
+            SDF.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Electronic
+            Highway Sign SDF.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples
+            & Extras\Resources\Fonts & Materials\Electronic Highway Sign SDF.asset
+          projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Electronic
+            Highway Sign SDF.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Oswald
+            Bold SDF.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples
+            & Extras\Resources\Fonts & Materials\Oswald Bold SDF.asset
+          projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Oswald
+            Bold SDF.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Roboto-Bold
+            SDF.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Examples
+            & Extras\Resources\Fonts & Materials\Roboto-Bold SDF.asset
+          projectPath: Assets\TextMesh Pro\Examples & Extras\Resources\Fonts & Materials\Roboto-Bold
+            SDF.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
+            - Fallback.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\TextMesh Pro\Resources\Fonts
+            & Materials\LiberationSans SDF - Fallback.asset
+          projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+            SDF - Fallback.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\UI.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI.meta
+          projectPath: Assets\UI.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo.meta
+          projectPath: Assets\UI\Ammo.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo\Bullet_Pair.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Bullet_Pair.png
+          projectPath: Assets\UI\Ammo\Bullet_Pair.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo\Bullet_Pair.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Bullet_Pair.png.meta
+          projectPath: Assets\UI\Ammo\Bullet_Pair.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo\Bullet_Single.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Bullet_Single.png
+          projectPath: Assets\UI\Ammo\Bullet_Single.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo\Bullet_Single.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Bullet_Single.png.meta
+          projectPath: Assets\UI\Ammo\Bullet_Single.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo\Empty_Bullet_Pair.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Empty_Bullet_Pair.png
+          projectPath: Assets\UI\Ammo\Empty_Bullet_Pair.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo\Empty_Bullet_Pair.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Empty_Bullet_Pair.png.meta
+          projectPath: Assets\UI\Ammo\Empty_Bullet_Pair.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo\Empty_Bullet_Single.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Empty_Bullet_Single.png
+          projectPath: Assets\UI\Ammo\Empty_Bullet_Single.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Ammo\Empty_Bullet_Single.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Ammo\Empty_Bullet_Single.png.meta
+          projectPath: Assets\UI\Ammo\Empty_Bullet_Single.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes.meta
+          projectPath: Assets\UI\Boxes.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan.meta
+          projectPath: Assets\UI\Boxes\Cyan.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png
+          projectPath: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png.meta
+          projectPath: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Active.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png
+          projectPath: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png.meta
+          projectPath: Assets\UI\Boxes\Cyan\Cyan_Bookmark_Inactive.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png
+          projectPath: Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png.meta
+          projectPath: Assets\UI\Boxes\Cyan\Cyan_Darker_Box.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan\Cyan_Default_Box.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Default_Box.png
+          projectPath: Assets\UI\Boxes\Cyan\Cyan_Default_Box.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Cyan\Cyan_Default_Box.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Cyan\Cyan_Default_Box.png.meta
+          projectPath: Assets\UI\Boxes\Cyan\Cyan_Default_Box.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Progress bar.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar.meta
+          projectPath: Assets\UI\Boxes\Progress bar.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Progress bar\Bar.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Bar.png
+          projectPath: Assets\UI\Boxes\Progress bar\Bar.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Progress bar\Bar.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Bar.png.meta
+          projectPath: Assets\UI\Boxes\Progress bar\Bar.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Progress bar\Progress bar_IBS.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Progress
+            bar_IBS.png
+          projectPath: Assets\UI\Boxes\Progress bar\Progress bar_IBS.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Progress bar\Progress bar_IBS.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Progress
+            bar_IBS.png.meta
+          projectPath: Assets\UI\Boxes\Progress bar\Progress bar_IBS.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Progress bar\Progress bar_WIB.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Progress
+            bar_WIB.png
+          projectPath: Assets\UI\Boxes\Progress bar\Progress bar_WIB.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Progress bar\Progress bar_WIB.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Progress bar\Progress
+            bar_WIB.png.meta
+          projectPath: Assets\UI\Boxes\Progress bar\Progress bar_WIB.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow.meta
+          projectPath: Assets\UI\Boxes\Yellow.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png
+          projectPath: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png.meta
+          projectPath: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Active.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png
+          projectPath: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png.meta
+          projectPath: Assets\UI\Boxes\Yellow\Yellow_Bookmark_Inactive.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png
+          projectPath: Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png.meta
+          projectPath: Assets\UI\Boxes\Yellow\Yellow_Darker_Box.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png
+          projectPath: Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png.meta
+          projectPath: Assets\UI\Boxes\Yellow\Yellow_Lighter_Box.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod.meta
+          projectPath: Assets\UI\Gun Mod.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Bullet.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Bullet.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Bullet.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Bullet.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Bullet.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Bullet.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Gun
+            Stat Element.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Gun
+            Stat Element.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Gun Stat Element.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Mod
+            Stat Element.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Mod
+            Stat Element.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Mod Stat Element.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Slot
+            Backdrop.prefab
+          projectPath: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\UI\Gun Mod\Prefabs\Slot
+            Backdrop.prefab.meta
+          projectPath: Assets\UI\Gun Mod\Prefabs\Slot Backdrop.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 3970388848ed30561078c0da3677c43568227863
+        mergeA: 
+        mergeB: 
+        authorName: Ferinn
+        authorEmail: ferin.pol@outlook.com
+        commitEmail: ferin.pol@outlook.com
+        commitName: Ferinn
+        summary: Weapon mod UI start (secondary scene)
+        description: 
+        timeString: 2025-03-10T17:28:43.000+01:00
+        commitTimeString: 2025-03-10T17:28:43.000+01:00
+        changes:
+        - path: Assets\Scenes\Main Scene.unity
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Main Scene.unity
+          projectPath: Assets\Scenes\Main Scene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\Weapon Mod Scene.unity
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity
+          projectPath: Assets\Scenes\Weapon Mod Scene.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\Weapon Mod Scene.unity.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Weapon Mod Scene.unity.meta
+          projectPath: Assets\Scenes\Weapon Mod Scene.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\Actors\Player\PlayerCharacter.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Actors\Player\PlayerCharacter.cs
+          projectPath: Assets\Scripts\Actors\Player\PlayerCharacter.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Actors\Player\PlayerController.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Actors\Player\PlayerController.cs
+          projectPath: Assets\Scripts\Actors\Player\PlayerController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Meta\GameManager.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Meta\GameManager.cs
+          projectPath: Assets\Scripts\Meta\GameManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Shaders\DamageIndicator\VignetteMat.mat
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Shaders\DamageIndicator\VignetteMat.mat
+          projectPath: Assets\Shaders\DamageIndicator\VignetteMat.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Runescribe Projects\Last Rays\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: f3bddbf4dc579aa83630830149aea23bd92447ad
+        mergeA: 
+        mergeB: 
+        authorName: Ferinn
+        authorEmail: ferin.pol@outlook.com
+        commitEmail: ferin.pol@outlook.com
+        commitName: Ferinn
+        summary: Further refactoring, basic gunModule implementation, vignette mat
+          null refference fix.
+        description: 
+        timeString: 2025-03-09T13:34:12.000+01:00
+        commitTimeString: 2025-03-09T13:34:12.000+01:00
+        changes:
+        - path: Assets\Scenes\Main Scene.unity
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scenes\Main Scene.unity
+          projectPath: Assets\Scenes\Main Scene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Actors\Player\PlayerCharacter.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Actors\Player\PlayerCharacter.cs
+          projectPath: Assets\Scripts\Actors\Player\PlayerCharacter.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Meta\GameManager.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\Meta\GameManager.cs
+          projectPath: Assets\Scripts\Meta\GameManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs
+          projectPath: Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs
+          originalPath: Assets\Scripts\WeaponSystem\ShotInfo.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs.meta
+          projectPath: Assets\Scripts\WeaponSystem\BulletSystem\ShotInfo.cs.meta
+          originalPath: Assets\Scripts\WeaponSystem\ShotInfo.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\AimHandler.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\AimHandler.cs
+          projectPath: Assets\Scripts\WeaponSystem\Gun\AimHandler.cs
+          originalPath: Assets\Scripts\WeaponSystem\AimHandler.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\AimHandler.cs.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\AimHandler.cs.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\AimHandler.cs.meta
+          originalPath: Assets\Scripts\WeaponSystem\AimHandler.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\Gun.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\Gun.cs
+          projectPath: Assets\Scripts\WeaponSystem\Gun\Gun.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunAimer.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunAimer.cs
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunAimer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData.meta
+          originalPath: Assets\Scripts\WeaponSystem\GunData.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs
+          originalPath: Assets\Scripts\WeaponSystem\GunData.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\GunData.cs.meta
+          originalPath: Assets\Scripts\WeaponSystem\GunData.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset
+          originalPath: Assets\Scripts\WeaponSystem\GunData\Pistol.asset
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Pistol.asset.meta
+          originalPath: Assets\Scripts\WeaponSystem\GunData\Pistol.asset.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset
+          originalPath: Assets\Scripts\WeaponSystem\GunData\Rifle.asset
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Rifle.asset.meta
+          originalPath: Assets\Scripts\WeaponSystem\GunData\Rifle.asset.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset
+          originalPath: Assets\Scripts\WeaponSystem\GunData\Shotgun.asset
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunData\Shotgun.asset.meta
+          originalPath: Assets\Scripts\WeaponSystem\GunData\Shotgun.asset.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModulator.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunModule.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\GunStats.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset.meta
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset.meta
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunModule\TestMod1.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\WeaponSystem\Gun\GunShooter.cs
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Scripts\WeaponSystem\Gun\GunShooter.cs
+          projectPath: Assets\Scripts\WeaponSystem\Gun\GunShooter.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Shaders\DamageIndicator\VignetteMat.mat
+          fullPath: C:\Runescribe Projects\Last Rays\Assets\Shaders\DamageIndicator\VignetteMat.mat
+          projectPath: Assets\Shaders\DamageIndicator\VignetteMat.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+          fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+          projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Runescribe Projects\Last Rays\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: ff19fde2c03b51f5be2c356bd5897056a0511a72
         mergeA: 
         mergeB: 
@@ -48689,7 +50399,7 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      statusAhead: 0
+      statusAhead: 1
       selectedIndex: -1
     selectedEntry:
       commitID: 
@@ -48840,13 +50550,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-03-11T22:17:38.232+01:00
+    updatedTimeString: 2025-04-18T10:42:43.675+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-03-11T22:17:38.612+01:00
+    updatedTimeString: 2025-04-18T10:42:43.652+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-03-11T22:17:30.947+01:00
+    updatedTimeString: 2025-04-18T10:42:32.866+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -48904,7 +50614,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: e2a60000
+  m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
     m_CachedPref: 170
     m_ControlHash: 1412526313
@@ -48914,7 +50624,7 @@ MonoBehaviour:
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
 --- !u!114 &25
 MonoBehaviour:
@@ -49021,7 +50731,7 @@ MonoBehaviour:
     x: 605
     y: 73
     width: 1294
-    height: 961
+    height: 946
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -49067,7 +50777,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -49077,9 +50787,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1294
-      height: 940
+      height: 925
     m_Scale: {x: 0.5054687, y: 0.5054687}
-    m_Translation: {x: 647, y: 470}
+    m_Translation: {x: 647, y: 462.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -49087,12 +50797,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -1280
-      y: -929.83
+      y: -914.9923
       width: 2560
-      height: 1859.66
+      height: 1829.9846
     m_MinimalGUI: 1
   m_defaultScale: 0.5054687
-  m_LastWindowPixelSize: {x: 1294, y: 961}
+  m_LastWindowPixelSize: {x: 1294, y: 946}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000

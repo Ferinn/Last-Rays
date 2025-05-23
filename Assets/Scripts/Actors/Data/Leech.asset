@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Leech
   m_EditorClassIdentifier: 
   maxHealth: 2
-  speed: 25000
+  speed: 30000
   accuracyPercentage: 0
